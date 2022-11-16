@@ -4,6 +4,10 @@ fn count_duplicates(text: &str) -> u32 {
     for i in text_vec {
         println!("{:?}", i);
     }
+    let mut leters: Vec<char> = "a suA mae".chars().collect();
+
+    println!("{:?}", &leters);
+    println!("{:?}", &leters.sort());
     32u32
 }
 fn main() {
