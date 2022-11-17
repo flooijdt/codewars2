@@ -1,13 +1,15 @@
 fn count_duplicates(text: &str) -> u32 {
     // Your code goes here
-    let mut text_vec: Vec<char> = text.chars().collect();
-    for i in text_vec {
-        text_vec.remove(;
-    }
+
     let mut leters: Vec<char> = "a suA mae904%$".chars().collect();
     leters.sort();
+    let mut newlist: Vec<String> = Vec::new();
 
-    println!("{:?}", &leters);
+    for i in leters.iter() {
+        newlist.push(i.to_lowercase().to_string());
+    }
+
+    println!("{:?}", &newlist);
     32u32
 }
 fn main() {
